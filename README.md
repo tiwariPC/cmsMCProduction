@@ -12,10 +12,10 @@ For each sample, you need to provide the following:
     - Look at existing scripts for inspiration. Note that this script can often be reused for multiple samples, so you do not always have to make a new script.
 
 The final step is to write a jdl file that describes the condor job you are about to submit. Check out the .jdl file in template directory for inspiration. 
-Make sure to change output paths here to write to an area you control. You can submit the job with condor_submit my_jdl_file.jdl.
+Make sure to change output paths here to write to an area you control. You can submit the job with ```condor_submit my_jdl_file.jdl```.
 
 NB: If you make up a new workflow, it is highly recommended to submit a single small test job to verify that your setup is OK. 
-To do this, it is particularly useful to use the condor_submit commandline syntax, which allows you to overwrite config parameters on the fly
+To do this, it is particularly useful to use the ```condor_submit``` commandline syntax, which allows you to overwrite config parameters on the fly
 - ```condor_submit my_jdl_file.jdl -a njobs=1 -a nevents=10```
 
 ##spcecific to bbDM
