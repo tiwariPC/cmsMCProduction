@@ -7,7 +7,7 @@ General framework
 For each sample, you need to provide the following:
   - A GEN fragment.
     - For existing samples, you can go to MCM, navigate to the GEN step request and click on "get fragment" to see the fragment used there.
-  - cmsdriver command
+  - ```cmsdriver``` command
     - Check run_wmLHEGS_DRPremixNanov7_Fall17.sh or go through the McM request, check ```Get setup command``` option.
     - Look at existing scripts for inspiration. Note that this script can often be reused for multiple samples, so you do not always have to make a new script.
 
