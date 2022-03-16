@@ -15,7 +15,8 @@ The final step is to write a jdl file that describes the condor job you are abou
 Make sure to change output paths here to write to an area you control. You can submit the job with condor_submit my_jdl_file.jdl.
 
 NB: If you make up a new workflow, it is highly recommended to submit a single small test job to verify that your setup is OK. 
-To do this, it is particularly useful to use the condor_submit commandline syntax, which allows you to overwrite config parameters on the fly, e.g.: condor_submit my_jdl_file.jdl -a njobs=1 -a nevents=10
+To do this, it is particularly useful to use the condor_submit commandline syntax, which allows you to overwrite config parameters on the fly
+- ```condor_submit my_jdl_file.jdl -a njobs=1 -a nevents=10```
 
 ##spcecific to bbDM
 Use ```submit_jobs.py``` file to submit jobs for each mass points, provide  ```njobs``` and ```nevents``` accodingly in this file only and use ```python submit_jobs.py``` command to submit the condor jobs
